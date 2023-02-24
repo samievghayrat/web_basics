@@ -7,17 +7,21 @@ class Navigation_Drawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 300,
-      decoration: BoxDecoration(
-          color: Colors.white,
-          boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 16)]),
-      child: Column(
-        children: [
-          NavigationDrawerHeader(),
-          DrawerItem(icon: Icons.videocam, item: 'Episodes'),
-          DrawerItem(icon: Icons.help, item: 'About'),
-        ],
+    return Scaffold(
+      drawer: Drawer(
+        child: Container(
+          width: 300,
+          decoration: BoxDecoration(
+              color: Colors.white,
+              boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 16)]),
+          child: Column(
+            children: [
+              NavigationDrawerHeader(),
+              DrawerItem(icon: Icons.videocam, item: 'Episodes'),
+              DrawerItem(icon: Icons.help, item: 'About'),
+            ],
+          ),
+        ),
       ),
     );
   }

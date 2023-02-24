@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web_basics/navbaritem/navbarlogo.dart';
+import 'package:web_basics/navigation_drawer/navigation_drawer.dart';
 
 import '../styles/styles.dart';
 import 'navBarItem.dart';
@@ -15,10 +16,14 @@ class NavigationBarMobile extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // IconButton(
-          //   onPressed: () {},
-          //   icon: Icon(Icons.menu),
-          // ),
+          // Navigation_Drawer(),
+          IconButton(
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (builder) => Navigation_Drawer()));
+            },
+            icon: Icon(Icons.menu),
+          ),
           NavBarLogo(),
           // Row(
           //   mainAxisSize: MainAxisSize.min,

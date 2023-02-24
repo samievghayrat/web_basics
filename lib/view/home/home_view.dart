@@ -15,7 +15,8 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) => Scaffold(
-        drawer: sizingInformation.deviceScreenType == DeviceScreenType.mobile
+        drawer:
+        sizingInformation.deviceScreenType == DeviceScreenType.mobile
             ? Navigation_Drawer()
             : null,
         backgroundColor: Colors.white,
