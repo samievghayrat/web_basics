@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:web_basics/navbaritem/navBarItem.dart';
+import 'package:web_basics/routing/route_names.dart';
 
 class DrawerItem extends StatelessWidget {
   final String item;
   final IconData icon;
-
-  const DrawerItem({Key? key, required this.icon, required this.item})
+  final String navigationPath;
+  const DrawerItem(
+      {Key? key,
+      required this.icon,
+      required this.item,
+      required this.navigationPath})
       : super(key: key);
 
   @override
@@ -18,7 +23,10 @@ class DrawerItem extends StatelessWidget {
           SizedBox(
             width: 30,
           ),
-          NavBarItem(title: item)
+          NavBarItem(
+            title: item,
+            navigationPath: EpisodesRoute,
+          )
         ],
       ),
     );

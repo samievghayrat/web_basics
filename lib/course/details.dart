@@ -1,9 +1,5 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-
-import '../styles/styles.dart';
 
 class CourseDetails extends StatelessWidget {
   const CourseDetails({Key? key}) : super(key: key);
@@ -45,13 +41,14 @@ class CourseDetails extends StatelessWidget {
                 height: 30,
               ),
               Text(
-                'health communication campaigns to promote wellness and reduce risk in a variety of populations, with an emphasis on the critical role of communication theory an',
+                'healthhealth communication campaigns to promote wellness and reduce risk in a variety of populations, with an emphasis on the critical role of communication theory an'
+                'healthhealth communication campaigns to promote wellness and reduce risk in a variety of populations, with an emphasis on the critical role of communication theory an',
                 style: TextStyle(
                   fontSize: desctiptionTitle,
                   height: 1.7,
                 ),
                 textAlign: textAlignment,
-              )
+              ),
             ],
           ),
         );
